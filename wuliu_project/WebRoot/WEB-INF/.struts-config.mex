@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/operator_office.jsp" location="1250,850" dimension="160,48" />
+  <StrutsActivity path="/wuliu_office.jsp" location="1250,650" dimension="142,48" />
+  <StrutsActivity path="/deliveryspot_office.jsp" location="1250,750" dimension="184,48" />
+  <StrutsActivity path="/index.jsp" location="50,850" dimension="100,48" />
+  <StrutsActivity path="/global/webSitInfo.jsp" location="1550,250" dimension="172,48" />
+  <StrutsActivity path="/global/price.jsp" location="1550,350" dimension="142,48" />
+  <StrutsActivity path="/global/search.jsp" location="1250,250" dimension="148,48" />
+  <StrutsActivity path="/global/websit.jsp" location="1550,450" dimension="148,48" />
+  <StrutsActivity path="/wuliu.jsp" location="350,850" dimension="100,48" />
+  <StrutsActivity path="/global/searchWebSit.jsp" location="1550,550" dimension="184,48" />
+  <StrutsActivity path="/userManage/particular.jsp" location="1850,350" dimension="196,48" />
+  <StrutsActivity path="/userManage/modification.jsp" location="1850,450" dimension="208,48" />
+  <StrutsActivity path="/userManage/selectUser.jsp" location="1850,550" dimension="196,48" />
+  <StrutsActivity path="/userManage/addUser.jsp" location="650,850" dimension="178,48" />
+  <StrutsActivity path="/empManage/empList.jsp" location="1850,750" dimension="172,48" />
+  <StrutsActivity path="/empManage/addEmp.jsp" location="950,850" dimension="166,48" />
+  <StrutsActivity path="/empManage/updataEmp.jsp" location="1850,850" dimension="184,48" />
+  <StrutsActivity path="/empManage/selectEmp.jsp" location="1850,950" dimension="184,48" />
+  <StrutsActivity path="/carManage/searchCar.jsp" location="1850,1150" dimension="184,48" />
+  <StrutsActivity path="/carManage/searchCar2.jsp" location="1850,1250" dimension="190,48" />
+  <StrutsActivity path="/carManage/viewCar.jsp" location="50,1350" dimension="172,48" />
+  <StrutsActivity path="/carManage/controlCar.jsp" location="350,1350" dimension="190,48" />
+  <StrutsActivity path="/carManage/addCar.jsp" location="50,950" dimension="166,48" />
+  <StrutsActivity path="/carManage/addCar2.jsp" location="950,1350" dimension="172,48" />
+  <StrutsActivity path="/ordersManage/UndoOrdering.jsp" location="1550,750" dimension="220,48" />
+  <StrutsActivity path="/ordersManage/ViewReceiptDetaile.jsp" location="1550,650" dimension="256,48" />
+  <StrutsActivity path="/ordersManage/SelectJiaoJieDan.jsp" location="1250,1150" dimension="244,48" />
+  <StrutsActivity path="/ordersManage/showJiaoJieDan.jsp" location="1250,350" dimension="232,48" />
+  <StrutsActivity path="/ordersManage/receiveOrders.jsp" location="1550,850" dimension="226,48" />
+  <StrutsActivity path="/ordersManage/SelectOrder.jsp" location="1550,950" dimension="214,48" />
+  <StrutsActivity path="/ordersManage/ViewTouDiDanDetaile.jsp" location="950,1250" dimension="262,48" />
+  <StrutsActivity path="/ordersManage/SelectOrderByOrderNo.jsp" location="1550,1050" dimension="268,48" />
+  <StrutsActivity path="/ordersManage/showTouDiDan.jsp" location="1550,1150" dimension="220,48" />
+  <StrutsActivity path="/ordersManage/showQianShouOrders.jsp" location="1850,1450" dimension="256,48" />
+  <StrutsActivity path="/ordersManage/SelectTouDiDan.jsp" location="1550,1250" dimension="232,48" />
+  <StrutsActivity path="/ordersManage/Ordering.jsp" location="350,950" dimension="196,48" />
+  <StrutsActivity path="/lineManage/matchingLine.jsp" location="650,950" dimension="208,48" />
+  <StrutsActivity path="/lineManage/viewLine.jsp" location="950,950" dimension="184,48" />
+  <StrutsActivity path="/lineManage/viewLineInfo.jsp" location="50,1050" dimension="208,48" />
+  <StrutsActivity path="/lineManage/addLine.jsp" location="350,1050" dimension="178,48" />
+  <StrutsActivity path="/peiSongDianManage/viewPeiSongDian.jsp" location="650,1050" dimension="268,48" />
+  <StrutsActivity path="/peiSongDianManage/viewPeiSongDianInfo.jsp" location="50,1150" dimension="292,48" />
+  <StrutsActivity path="/peiSongDianManage/modifyPeiSongDianInfo.jsp" location="650,1150" dimension="304,48" />
+  <StrutsActivity path="/peiSongDianManage/addPeiSongDian.jsp" location="50,1250" dimension="262,48" />
+  <StrutsActivity path="/baoBiaoManage/viewBaoBiao.jsp" location="650,1250" dimension="220,48" />
+  <StrutsActivity path="showJiaoJieDan.jsp" location="1250,1050" dimension="148,48" />
+  <StrutsActivity path="/check/selectEmployee" location="650,1350" dimension="166,48" />
+  <StrutsActivity path="/login.do" location="50,50" dimension="262,84" />
+  <StrutsActivity path="/company.do" location="650,50" dimension="274,84" />
+  <StrutsActivity path="/check/user.do" location="1250,50" dimension="256,84" />
+  <StrutsActivity path="/check/employee.do" location="1850,50" dimension="280,84" />
+  <StrutsActivity path="/check/selectEmployee.do" location="50,250" dimension="316,84" />
+  <StrutsActivity path="/check/updataEmployee.do" location="650,250" dimension="316,84" />
+  <StrutsActivity path="/check/car.do" location="50,450" dimension="250,84" />
+  <StrutsActivity path="/check/order.do" location="350,450" dimension="262,84" />
+  <StrutsActivity path="/check/line.do" location="950,450" dimension="256,84" />
+  <StrutsActivity path="/check/deliverySpot.do" location="50,650" dimension="304,84" />
+  <StrutsActivity path="/check/report.do" location="650,650" dimension="268,84" />
+  <StrutsTransition id="/wuliu.jsp,null,/company.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="400,898" />
+      <AbsolutePoint location="400,913" />
+      <AbsolutePoint location="-85,913" />
+      <AbsolutePoint location="-85,-85" />
+      <AbsolutePoint location="757,-85" />
+      <AbsolutePoint location="757,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/updataEmployee.do,selectEmp,/empManage/selectEmp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="939,250" />
+      <AbsolutePoint location="939,-55" />
+      <AbsolutePoint location="2145,-55" />
+      <AbsolutePoint location="2145,974" />
+      <AbsolutePoint location="2034,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/company.do,websit,/global/websit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="924,122" />
+      <AbsolutePoint location="1227,122" />
+      <AbsolutePoint location="1227,474" />
+      <AbsolutePoint location="1550,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,super,/wuliu_office.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="312,92" />
+      <AbsolutePoint location="501,92" />
+      <AbsolutePoint location="501,413" />
+      <AbsolutePoint location="1321,413" />
+      <AbsolutePoint location="1321,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/empManage/selectEmp.jsp,null,/check/selectEmployee.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1942,998" />
+      <AbsolutePoint location="1942,1013" />
+      <AbsolutePoint location="-55,1013" />
+      <AbsolutePoint location="-55,292" />
+      <AbsolutePoint location="50,292" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/car.do,search,/carManage/searchCar.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="139,534" />
+      <AbsolutePoint location="139,613" />
+      <AbsolutePoint location="591,613" />
+      <AbsolutePoint location="591,1113" />
+      <AbsolutePoint location="1942,1113" />
+      <AbsolutePoint location="1942,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,ViewReceiptDetaile,/ordersManage/ViewReceiptDetaile.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="609,534" />
+      <AbsolutePoint location="609,1615" />
+      <AbsolutePoint location="2109,1615" />
+      <AbsolutePoint location="2109,674" />
+      <AbsolutePoint location="1806,674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/company.do,price,/global/price.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="924,92" />
+      <AbsolutePoint location="1071,92" />
+      <AbsolutePoint location="1071,313" />
+      <AbsolutePoint location="1621,313" />
+      <AbsolutePoint location="1621,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/deliverySpot.do,viewPeiSongDian,/peiSongDianManage/viewPeiSongDian.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="277,734" />
+      <AbsolutePoint location="277,1112" />
+      <AbsolutePoint location="440,1112" />
+      <AbsolutePoint location="440,1172" />
+      <AbsolutePoint location="618,1172" />
+      <AbsolutePoint location="618,1074" />
+      <AbsolutePoint location="650,1074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManage/addUser.jsp,null,/check/user.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="828,874" />
+      <AbsolutePoint location="933,874" />
+      <AbsolutePoint location="933,365" />
+      <AbsolutePoint location="1131,365" />
+      <AbsolutePoint location="1131,92" />
+      <AbsolutePoint location="1250,92" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,operater,/operator_office.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,134" />
+      <AbsolutePoint location="181,179" />
+      <AbsolutePoint location="1521,179" />
+      <AbsolutePoint location="1521,874" />
+      <AbsolutePoint location="1410,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/deliverySpot.do,modifyPeiSongDianInfo,/peiSongDianManage/modifyPeiSongDianInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="345,734" />
+      <AbsolutePoint location="345,1177" />
+      <AbsolutePoint location="650,1177" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/selectEmployee.do,empList,/empManage/empList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,322" />
+      <AbsolutePoint location="35,322" />
+      <AbsolutePoint location="35,813" />
+      <AbsolutePoint location="1936,813" />
+      <AbsolutePoint location="1936,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/car.do,carDetail,/carManage/viewCar.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="153,450" />
+      <AbsolutePoint location="153,365" />
+      <AbsolutePoint location="725,365" />
+      <AbsolutePoint location="725,613" />
+      <AbsolutePoint location="995,613" />
+      <AbsolutePoint location="995,665" />
+      <AbsolutePoint location="1227,665" />
+      <AbsolutePoint location="1227,1313" />
+      <AbsolutePoint location="136,1313" />
+      <AbsolutePoint location="136,1350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/user.do,modification,/userManage/modification.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1506,122" />
+      <AbsolutePoint location="1749,122" />
+      <AbsolutePoint location="1749,474" />
+      <AbsolutePoint location="1850,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/car.do,searchCar2,/carManage/searchCar2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="175,534" />
+      <AbsolutePoint location="175,565" />
+      <AbsolutePoint location="561,565" />
+      <AbsolutePoint location="561,1213" />
+      <AbsolutePoint location="1945,1213" />
+      <AbsolutePoint location="1945,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/company.do,websitinfo,/global/webSitInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="787,50" />
+      <AbsolutePoint location="787,-25" />
+      <AbsolutePoint location="1636,-25" />
+      <AbsolutePoint location="1636,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,selectJiaoJieDan,/ordersManage/SelectJiaoJieDan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="490,534" />
+      <AbsolutePoint location="490,905" />
+      <AbsolutePoint location="1405,905" />
+      <AbsolutePoint location="1405,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/deliverySpot.do,viewPeiSongDianInfo,/peiSongDianManage/viewPeiSongDianInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="260,734" />
+      <AbsolutePoint location="260,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lineManage/addLine.jsp,null,/check/line.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="439,1074" />
+      <AbsolutePoint location="439,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,ViewTouDiDanDetaile,/ordersManage/ViewTouDiDanDetaile.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="469,450" />
+      <AbsolutePoint location="469,239" />
+      <AbsolutePoint location="1209,239" />
+      <AbsolutePoint location="1209,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,toudidan,/ordersManage/receiveOrders.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="467,534" />
+      <AbsolutePoint location="467,944" />
+      <AbsolutePoint location="1663,944" />
+      <AbsolutePoint location="1663,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/user.do,selectUser,/userManage/selectUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1506,92" />
+      <AbsolutePoint location="1833,92" />
+      <AbsolutePoint location="1833,574" />
+      <AbsolutePoint location="1850,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/carManage/addCar.jsp,null,/check/car.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,960" />
+      <AbsolutePoint location="11,960" />
+      <AbsolutePoint location="11,1419" />
+      <AbsolutePoint location="633,1419" />
+      <AbsolutePoint location="633,919" />
+      <AbsolutePoint location="499,919" />
+      <AbsolutePoint location="499,587" />
+      <AbsolutePoint location="153,587" />
+      <AbsolutePoint location="153,534" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,selectOrder,/ordersManage/SelectOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="481,534" />
+      <AbsolutePoint location="481,931" />
+      <AbsolutePoint location="1653,931" />
+      <AbsolutePoint location="1653,950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/peiSongDianManage/addPeiSongDian.jsp,null,/check/deliverySpot.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,1274" />
+      <AbsolutePoint location="181,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/company.do,wuliu,/wuliu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,92" />
+      <AbsolutePoint location="627,92" />
+      <AbsolutePoint location="627,874" />
+      <AbsolutePoint location="450,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/line.do,viewLineInfo,/lineManage/viewLineInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1206,513" />
+      <AbsolutePoint location="1479,513" />
+      <AbsolutePoint location="1479,1065" />
+      <AbsolutePoint location="1521,1065" />
+      <AbsolutePoint location="1521,1513" />
+      <AbsolutePoint location="-25,1513" />
+      <AbsolutePoint location="-25,1074" />
+      <AbsolutePoint location="50,1074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,showReceipt,/ordersManage/showJiaoJieDan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="479,450" />
+      <AbsolutePoint location="479,387" />
+      <AbsolutePoint location="1250,387" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/line.do,matchingLine,/lineManage/matchingLine.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1179,534" />
+      <AbsolutePoint location="1179,1065" />
+      <AbsolutePoint location="933,1065" />
+      <AbsolutePoint location="933,974" />
+      <AbsolutePoint location="858,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/car.do,controlCar,/carManage/controlCar.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="175,450" />
+      <AbsolutePoint location="175,413" />
+      <AbsolutePoint location="411,413" />
+      <AbsolutePoint location="411,-55" />
+      <AbsolutePoint location="877,-55" />
+      <AbsolutePoint location="877,-85" />
+      <AbsolutePoint location="2235,-85" />
+      <AbsolutePoint location="2235,1573" />
+      <AbsolutePoint location="445,1573" />
+      <AbsolutePoint location="445,1398" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/updataEmployee.do,selectEmpAction,/check/selectEmployee.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,292" />
+      <AbsolutePoint location="366,292" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/car.do,searchCar,/carManage/searchCar.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="125,534" />
+      <AbsolutePoint location="125,635" />
+      <AbsolutePoint location="1839,635" />
+      <AbsolutePoint location="1839,1174" />
+      <AbsolutePoint location="1850,1174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/employee.do,empList,/empManage/empList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2103,134" />
+      <AbsolutePoint location="2103,774" />
+      <AbsolutePoint location="2022,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/company.do,searchWebSit,/global/searchWebSit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="817,50" />
+      <AbsolutePoint location="817,5" />
+      <AbsolutePoint location="1779,5" />
+      <AbsolutePoint location="1779,574" />
+      <AbsolutePoint location="1734,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,874" />
+      <AbsolutePoint location="5,874" />
+      <AbsolutePoint location="5,122" />
+      <AbsolutePoint location="50,122" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/selectEmployee.do,updadaEmp,/empManage/updataEmp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="327,250" />
+      <AbsolutePoint location="327,35" />
+      <AbsolutePoint location="2205,35" />
+      <AbsolutePoint location="2205,874" />
+      <AbsolutePoint location="2034,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,doReceipt,/ordersManage/UndoOrdering.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="443,534" />
+      <AbsolutePoint location="443,835" />
+      <AbsolutePoint location="1660,835" />
+      <AbsolutePoint location="1660,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/car.do,addCar2,/carManage/addCar2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="205,534" />
+      <AbsolutePoint location="205,541" />
+      <AbsolutePoint location="2271,541" />
+      <AbsolutePoint location="2271,1374" />
+      <AbsolutePoint location="1122,1374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,showTouDiDan,/ordersManage/showTouDiDan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,1174" />
+      <AbsolutePoint location="1660,1174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ordersManage/Ordering.jsp,null,/check/order.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="457,950" />
+      <AbsolutePoint location="457,534" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/user.do,particular,/userManage/particular.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1378,134" />
+      <AbsolutePoint location="1378,209" />
+      <AbsolutePoint location="1948,209" />
+      <AbsolutePoint location="1948,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/line.do,viewLine,/lineManage/viewLine.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1149,534" />
+      <AbsolutePoint location="1149,974" />
+      <AbsolutePoint location="1134,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/baoBiaoManage/viewBaoBiao.jsp,null,/check/report.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1274" />
+      <AbsolutePoint location="648,1274" />
+      <AbsolutePoint location="648,692" />
+      <AbsolutePoint location="650,692" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,manager,/deliveryspot_office.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,92" />
+      <AbsolutePoint location="-25,92" />
+      <AbsolutePoint location="-25,774" />
+      <AbsolutePoint location="1250,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,selectTouDiDan,/ordersManage/SelectTouDiDan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,1274" />
+      <AbsolutePoint location="1666,1274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/empManage/addEmp.jsp,null,/check/employee.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1033,850" />
+      <AbsolutePoint location="1033,613" />
+      <AbsolutePoint location="2073,613" />
+      <AbsolutePoint location="2073,134" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,SelectOrderByOrderNo,/ordersManage/SelectOrderByOrderNo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="513,534" />
+      <AbsolutePoint location="513,741" />
+      <AbsolutePoint location="1783,741" />
+      <AbsolutePoint location="1783,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/empManage/updataEmp.jsp,null,/check/updataEmployee.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1942,898" />
+      <AbsolutePoint location="1942,913" />
+      <AbsolutePoint location="1449,913" />
+      <AbsolutePoint location="1449,565" />
+      <AbsolutePoint location="808,565" />
+      <AbsolutePoint location="808,334" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/car.do,addCar,/carManage/addCar.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="205,450" />
+      <AbsolutePoint location="205,435" />
+      <AbsolutePoint location="2181,435" />
+      <AbsolutePoint location="2181,1533" />
+      <AbsolutePoint location="41,1533" />
+      <AbsolutePoint location="41,974" />
+      <AbsolutePoint location="50,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/company.do,orderState,/global/search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="787,134" />
+      <AbsolutePoint location="787,209" />
+      <AbsolutePoint location="1324,209" />
+      <AbsolutePoint location="1324,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/check/order.do,showQianShouOrders,/ordersManage/showQianShouOrders.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="612,492" />
+      <AbsolutePoint location="644,492" />
+      <AbsolutePoint location="644,1474" />
+      <AbsolutePoint location="1850,1474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

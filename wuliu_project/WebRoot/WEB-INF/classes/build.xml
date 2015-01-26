@@ -1,0 +1,12 @@
+<project>
+	<target name="encoding">
+		<native2ascii dest="com/global/struts"
+					  src="com/global/temp"
+					  encoding="UTF-8"
+					  includes="KindEditor.js"
+			>
+		
+		</native2ascii>
+	
+	</target>
+</project>

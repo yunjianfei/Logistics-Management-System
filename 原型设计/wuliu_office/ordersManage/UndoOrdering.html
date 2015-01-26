@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>UndoOrder.html</title>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<link rel="stylesheet" type="text/css" href="../wuliu_back.css"/>
+<script language="javascript">
+	function addOption(){
+		var theform = document.forms[0];
+		var s = document.forms[0].vid.value;
+		 theform.a.options[theform.a.length]=new Option(s,s);
+	}
+
+</script>
+
+</head>
+<body>
+<center>
+  <h1>需处理订单列表</h1>
+  
+  
+  <form name="f1"  action="jiaojiedan.html" >
+  <table border="0">
+  <tr><td align="center">条形码</td>
+  <td><input type="text" name="vid"/><input type="button" value="添加" onclick="addOption()"/></td>
+  
+  <tr>
+    <td align="center">车号</td>
+    <td><input type="text"></td></tr>
+  </tr>
+    	<tr><td  colspan="2" align="center"> <select multiple="multiple" style="width:150px; height:200px" name="a"></select></td></tr>
+		<tr><td colspan="2" align="center"><input type="submit" value="生成交接单"></td></tr>
+		</table>
+    </form>
+
+</center>
+</body>
+</html>

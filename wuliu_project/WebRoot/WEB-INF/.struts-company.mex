@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/login.do" location="632,425" dimension="262,84" />
+  <StrutsActivity path="/company.do" location="0,425" dimension="274,84" />
+  <StrutsActivity path="/user.do" location="307,702" dimension="256,84" />
+  <StrutsActivity path="/employee.do" location="349,148" dimension="280,84" />
+  <StrutsActivity path="/car.do" location="0,979" dimension="250,84" />
+  <StrutsActivity path="/order.do" location="0,702" dimension="262,84" />
+  <StrutsActivity path="/line.do" location="608,702" dimension="256,84" />
+  <StrutsActivity path="/deliverySpot.do" location="0,148" dimension="304,84" />
+  <StrutsActivity path="/report.do" location="319,425" dimension="268,84" />
+  <StrutsActivity path="/index.jsp" location="713,277" dimension="100,48" />
+  <StrutsActivity path="/wuliu.jsp" location="87,277" dimension="100,48" />
+  <StrutsActivity path="/userManage/addUser.jsp" location="346,554" dimension="178,48" />
+  <StrutsActivity path="/empManage/addEmp.jsp" location="406,0" dimension="166,48" />
+  <StrutsActivity path="/carManage/addCar.jsp" location="42,831" dimension="166,48" />
+  <StrutsActivity path="/ordersManage/Ordering.jsp" location="33,554" dimension="196,48" />
+  <StrutsActivity path="/lineManage/addLine.jsp" location="647,554" dimension="178,48" />
+  <StrutsActivity path="/peiSongDianManage/addPeiSongDian.jsp" location="21,0" dimension="262,48" />
+  <StrutsActivity path="/baoBiaoManage/viewBaoBiao.jsp" location="343,277" dimension="220,48" />
+  <StrutsTransition id="/peiSongDianManage/addPeiSongDian.jsp,null,/deliverySpot.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,48" />
+      <AbsolutePoint location="152,148" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/wuliu.jsp,null,/company.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="137,325" />
+      <AbsolutePoint location="137,425" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/baoBiaoManage/viewBaoBiao.jsp,null,/report.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="453,325" />
+      <AbsolutePoint location="453,425" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/empManage/addEmp.jsp,null,/employee.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="489,48" />
+      <AbsolutePoint location="489,148" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/carManage/addCar.jsp,null,/car.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="125,879" />
+      <AbsolutePoint location="125,979" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userManage/addUser.jsp,null,/user.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="435,602" />
+      <AbsolutePoint location="435,702" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lineManage/addLine.jsp,null,/line.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="736,602" />
+      <AbsolutePoint location="736,702" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ordersManage/Ordering.jsp,null,/order.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="131,602" />
+      <AbsolutePoint location="131,702" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="763,325" />
+      <AbsolutePoint location="763,425" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

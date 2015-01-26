@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>viewPeiSongDian.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <link rel="stylesheet" type="text/css" href="../wuliu_back.css"/>
+	<script type="text/javascript">
+	function tt()
+	{
+	if(confirm("确定要删除吗？")){
+		var f=document.forms[0];
+		f.action="delSuccess.html";
+		f.submit();
+	}else{
+
+		return;
+	}
+
+	}
+</script>
+
+  </head>
+  
+  <body>
+    <center>
+    	<h1>查看配送点</h1>
+    	<hr>
+    	
+    	<table border="1" class="t1">
+    		<form action="#">
+    			<tr>
+	    			<th>站点编号</th>
+	    			<th>所在地址</th>
+	    			<th>联系电话</th>
+	    			<th>管理员用户名</th>
+	    			<th>修改站点信息</th>
+	    			<th>删除站点</th>
+    			</tr>
+    			<tr>
+    				<td><a href="#">001</a></td>
+    				<td>山西省大同市</td>
+    				<td>0351-3224234</td>
+    				<td>tyAdmin</td>
+    				<td><a href="modifyPeiSongDian.html"  >修改</a></td>
+    				<td><a href="#" onClick="tt()" >删除</a></td>
+    			</tr>
+    				<tr>
+    				<td><a href="#">002</a></td>
+    				<td>陕西西安市</td>
+    				<td>0351-3224234</td>
+    				<td>tyAdmin</td>
+    				<td><a href="modifyPeiSongDian.html">修改</a></td>
+    				<td><a href="#" onClick="tt()" >删除</a></td>
+    			</tr>
+    				<tr>
+    				<td><a href="#">003</a></td>
+    				<td>山西省太原市</td>
+    				<td>0351-3224234</td>
+    				<td>tyAdmin</td>
+    				<td><a href="modifyPeiSongDian.html">修改</a></td>
+    				<td><a href="#" onClick="tt()" >删除</a></td>
+    			</tr>
+    		</form>
+    	</table>
+    </center>
+  </body>
+</html>

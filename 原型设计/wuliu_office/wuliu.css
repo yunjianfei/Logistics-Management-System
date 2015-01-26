@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: #F7FBFF;
+	/* 背景色、水平重复的背景图片 */
+}
+#container{
+	position:relative;
+	margin:0px auto 0px auto;
+	width:800px;
+	text-align:left;
+	background:#FFFFFF;
+}
+div br{
+	display:none;
+}
+
+#banner{
+	width:800px; height:152px;
+	margin:0px 0px 1px 0px;
+	background:url(global_images/top.jpg) no-repeat center;	/* 添加banner图片 */
+}
+#globallink{
+	margin:0px; padding:0px;
+}
+#globallink ul{
+    list-style:none;
+	padding:0px; margin:0px;
+}
+#globallink li{
+	text-align:center; width:80px; height:32px;
+	background:url(global_images/button1.jpg) repeat-x;
+	float:left;	
+}
+#globallink a{
+	display:block;
+	padding:9px 6px 11px 6px;
+	margin:0px;
+}
+#globallink a:link, #globallink a:visited{
+	color:#004a87;
+	text-decoration:none;
+}
+#globallink a:hover{
+	color:#FFFFFF;
+	text-decoration:underline;
+	background:url(global_images/button1_bg.jpg) no-repeat;
+}
+#left{
+float:left;
+}
+#search{
+    width:200px;
+
+	text-align:center;
+	background-color:#FFFFFF;
+}
+#search br{
+    display:block;
+}
+
+#photo{
+	height:255px;
+	width:200px;
+	float:left;
+}
+#contact{
+    clear:both;
+    width:200px;
+	height:90px;
+	text-align:center;
+	float:left;
+}	
+
+#img{
+    width:30px;
+
+	text-align:center;
+	float:left;
+}
+#lianxi{
+    width:200px;
+	height:90px;
+	float:left;
+	text-align:left;
+	background:url(global_images/tel.jpg) repeat;
+	font-size:12px;
+	font-weight:bold;
+}
+#lianxi br{
+    display:block;
+}
+#main{
+	float:left;
+	height:440px;
+	width:450px;
+
+	background-color:#FFFFFF;
+}
+#title1{
+	height:23px;
+	width:450px;
+	background-image:url(global_images/1.GIF);
+}
+#dongtai{
+   width:450px;
+}
+#dongtai ul{
+    list-style-image:url(global_images/tubiao.gif);
+}
+#dongtai ul li{
+	text-align:left; 
+	width:400px; 
+	height:23px;
+}
+#dongtai a{
+	display:block;
+	padding:9px 6px 11px 6px;
+	margin:0px;
+}
+#dongtai a:link, #dongtai a:visited{
+    color:#000000;
+	text-decoration:none;
+}
+#dongtai a:hover{
+	text-decoration:none;
+	color:#0E85DC;
+}
+
+#title2{
+	height:25px;
+	width:450px;
+	background-image:url(global_images/2.GIF);
+}
+#news{
+   width:450px;
+}
+#news ul{
+    list-style-image:url(global_images/tubiao.gif);
+}
+#news ul li{
+	text-align:left; 
+	width:400px; 
+	height:23px;
+}
+#news a{
+	display:block;
+	padding:9px 6px 11px 6px;
+	margin:0px;
+}
+#news a:link, #news a:visited{
+    color:#000000;
+	text-decoration:none;
+}
+#news a:hover{
+	text-decoration:none;
+	color:#0E85DC;
+}
+#right{
+	 height:442px;
+	 width:144px;
+	 float:right;
+}
+#right br{
+    display:block;
+}
+#login{
+  width:144px;
+  height:120px;
+  text-align:left;
+}
+#notice{
+	width:140px;
+	height:210px;
+	padding:10px 5px 0px 5px;
+	}
+#web{
+  width:144px;
+  height:90px;
+  text-align:left;
+}
+#price{
+  width:144px;
+  height:95px;
+  text-align:left;
+}
+#message{
+  width:144px;
+  text-align:left;
+}
+#foot{
+	clear:both;
+	height:140px;
+	width:800px;
+}
+#map{
+	width:180px;
+	height:140px;
+	float:left;
+}
+#map_right{
+    background-image:url(global_images/map_bg.gif);
+    width:620px;
+	height:140px;
+	float:left;
+	padding-top:5px;
+}
+#website{
+    float:left;
+	height:140px;
+	text-align:left;
+	margin-top:4px;
+}
+
+#website ul{
+   list-style:none;
+}
+
+#website ul li{
+    text-align:left;
+	width:80px; 
+	height:22px;
+}
+
+#website a{
+	display:block;
+	margin:0px;
+}
+#website a:link, #website a:visited{
+    color:#555555;
+	text-decoration:none;
+}
+#website a:hover{
+	text-decoration:none;
+	color:#CC0000;
+}
+
+#abaut{
+
+}

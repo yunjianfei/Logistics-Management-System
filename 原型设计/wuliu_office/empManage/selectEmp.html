@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="../wuliu_back.css"/>
+     <script>
+	   function test() {
+	    var a = confirm("是否删除？");
+		if(a)
+		  
+	     alert("删除成功！");
+		 else alert("操作失败！");
+	   }
+	 </script>
+	 <script>
+  function selectall() {
+    var a = document.all;
+	for(var i = 0;i<a.length;i++) {
+	   if(typeof a[i]!="undefind" && a[i].type=='checkbox') {
+	      a[i].checked=true;
+	   }
+	}
+  }
+
+  function unselectall() {
+    var a = document.all;
+	for(var i = 0;i<a.length;i++) {
+	  if(typeof a[i]!="undefind" && a[i].type=='checkbox') {
+	    a[i].checked=false;
+	  }
+	}
+  }
+
+</script>
+     <style type="text/css">
+<!--
+.STYLE1 {font-size: 12px}
+-->
+     </style>
+</head>
+  
+  <body>
+  　<h1>员工管理</h1>
+  　<center>
+   <form action="">
+     <span class="STYLE1">编号：</span>
+     <input type="text" name="bianhao">
+     　　　<input type="button" value="查询">
+     　　　<input type="reset" value="重置">
+   </form>
+   </center>
+  <hr>
+  <center> 
+   <h3>查询结果</h3>
+  <form action="" name="form1">
+  
+   <table border="1"  class="t1">
+     <tr><th>编号</th><th>姓名</th><th>性别</th><th>年龄</th><th>入职日期</th><th>电话号码</th><th>职位</th><th>薪水</th><th>地址</th><th>邮箱</th><th>身份类别</th><th>身份证号</th><th>删除</th><th>修改</th></tr>
+     <tr>
+      <td>123</td><td>王五</td><td>男</td><td>22</td><td>19990208</td><td>123456</td><td>team</td><td>3500</td><td>123</td><td>456</td><td>身份证</td><td>123456</td><td><input type="checkbox" ></td><td><a href="updataEmp.html">修改</a></td></tr>
+      
+   </table>
+    <input type="button" name="" value="全选" onClick="selectall()">
+  　<input type="button" name="" value="反选" onClick="unselectall()">
+   <input type="button" name = "shanchu"value="删除" onClick="test()">
+   </form></center>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Untitled Document</title>
+		<link type="text/css" rel="stylesheet" href="../css/sheetManage.css">
+        <link rel="stylesheet" type="text/css" href="../wuliu_back.css"/>
+        <script language="javascript">
+		function view(){
+		 var type = document.f1.type.value;
+		 if(type == '1'){
+		 document.getElementById("yearStart").style.display='block';
+		 document.getElementById("yearEnd").style.display='block';
+		 document.getElementById("seasonStart").style.display='none';
+		 document.getElementById("seasonEnd").style.display='none';
+		 document.getElementById("monthStart").style.display='none';
+	     document.getElementById("monthEnd").style.display='none';
+		 }
+		 else if(type == '2'){
+		  document.getElementById("yearStart").style.display='none';
+		 document.getElementById("yearEnd").style.display='none';
+		  document.getElementById("seasonStart").style.display='block';
+		 document.getElementById("seasonEnd").style.display='block';
+		  document.getElementById("monthStart").style.display='none';
+	     document.getElementById("monthEnd").style.display='none';
+		 }
+		 if(type == '3'){
+		 document.getElementById("yearStart").style.display='none';
+		  document.getElementById("yearEnd").style.display='none';
+		  document.getElementById("seasonStart").style.display='none';
+		 document.getElementById("seasonEnd").style.display='none';
+		  document.getElementById("monthStart").style.display='block';
+	     document.getElementById("monthEnd").style.display='block';
+		 }
+		}
+		
+		function points(){
+		document.getElementById("points").style.display='block';
+		}
+		function points1(){
+		document.getElementById("points").style.display='none';
+		}
+		</script>
+	</head>
+	<body>
+    
+		<h1>查看报表</h1> 
+       <center>
+       <form action="" name="f1">
+		<table border="1" class="t1">
+			<tr>
+				<th>查看类型</th>
+				<th>起始时间</th>
+				<th>结束时间</th>
+				<th>查看范围</th>
+			</tr>
+			<tr>
+				<td>
+					<select name="type" onChange="view();">
+						<option value="1">按年</option>
+						<option value="2">按季度</option>
+						<option value="3">按月</option>
+					</select>
+				</td>
+				<td>
+					<div id="yearStart"  style="display:block;">
+						<select name="sy_year">
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+						</select>年
+					</div>
+					<div id="seasonStart" style="display:none;">
+						<select name="ss_year">
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+						</select>年
+						<select name="ss_season">
+							<option value="1">一</option>
+							<option value="2">二</option>
+							<option value="3">三</option>
+							<option value="4">四</option>
+						</select>季度
+					</div>
+					<div id="monthStart" style="display:none;">
+						<select name="em_year">
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+						</select>年
+						<select name="em_month">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>月
+					</div>
+				</td>
+				<td>
+					<div id="yearEnd"  style="display:block;">
+						<select name="ey_year">
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+						</select>年
+					</div>
+					<div id="seasonEnd" style="display:none;">
+						<select name="ss_year">
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+						</select>年
+						<select name="ss_season">
+							<option value="1">一</option>
+							<option value="2">二</option>
+							<option value="3">三</option>
+							<option value="4">四</option>
+						</select>季度
+					</div>
+					<div id="monthEnd" style="display:none;">
+						<select name="em_year">
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+						</select>年
+						<select name="em_month">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>月
+					</div>
+				</td>
+				<td>
+					<input type="radio" name="region" checked="true" checked="checked" value="1" onClick="points1();">总公司<br>
+					<input type="radio" name="region" value="2" onClick="points();">配送点
+					
+					<div id="points" style="display:none; ">
+					   <select>
+					   <option>北京</option>
+					   <option>南京</option>
+					   <option>上海</option>
+					   <option>太原</option>
+					   
+					   </select>
+					</div>
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center">
+					<input id="button" type="button" value="查看" onclick="">
+				</td>
+			</tr>
+		</table>
+        </form>
+        </center>
+	</body>
+</html>

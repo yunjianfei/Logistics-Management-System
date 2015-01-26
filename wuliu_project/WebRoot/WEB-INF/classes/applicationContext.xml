@@ -1,0 +1,180 @@
+<beans
+  xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.directwebremoting.org/schema/spring-dwr
+    http://www.directwebremoting.org/schema/spring-dwr-2.0.xsd">
+
+	<!-- <bean/> definitions here -->
+	
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="baseTransaction"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+		abstract="true">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="proxyInterfaces">
+			<list>
+				<value>com.global.dao.DeliverySpotDao</value>
+			</list>
+		</property>
+		<property name="target" ref="DeliverySpotDao"></property>
+		<property name="proxyTargetClass" value="true" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="find*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="load*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="save*">PROPAGATION_REQUIRED</prop>
+				<prop key="add*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="remove*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!--<dwr:controller id="dwrController" debug="true"></dwr:controller>
+
+      --><dwr:configuration>
+		<dwr:convert type="hibernate3" class="com.global.vo.City"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Province"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Deliveryspot"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Line"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Power"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Receipt"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Receiptdetaile"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Carstate"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Cartype"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Employee"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.User"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Linedetaile"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Order"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Orderstate"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Car"></dwr:convert>
+		<dwr:convert type="hibernate3" class="com.global.vo.Position"></dwr:convert>
+	</dwr:configuration>
+	
+	<bean id="EmployeeDao" class="com.global.dao.impl.EmployeeDaoImpl">
+       <property name="jt" ref="jdbcTemplete"></property>
+       <property name="sessionFactory" ref="sessionFactory"></property>
+       <dwr:remote javascript="EmpDaoJS"></dwr:remote>
+  </bean>
+	
+	<bean id="CompanyDao" class="com.global.dao.impl.CompanyDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	
+	<bean id="ReceiptDao" class="com.global.dao.impl.ReceiptDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="ReceiptDetaileDao" class="com.global.dao.impl.ReceiptDetaileDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="OrderDao" class="com.global.dao.impl.OrderDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<dwr:remote javascript="OrderDaoJS"></dwr:remote>
+	</bean>
+	
+	<bean id="UserDao" class="com.global.dao.impl.UserDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<dwr:remote javascript="UserDaoJS"></dwr:remote>
+	</bean>
+	
+	<bean id="ReportDao" class="com.global.dao.impl.ReportDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="CarDao" class="com.global.dao.impl.CarDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="DeliverySpotDao"
+		class="com.global.dao.impl.DeliverySpotDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<dwr:remote javascript="DeliverySpotDaoJS"></dwr:remote>
+	</bean>
+
+
+	<bean id="BaseDao" class="com.global.dao.impl.BaseDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="LineDao" class="com.global.dao.impl.LineDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<dwr:remote javascript="LineDaoJS"></dwr:remote>
+	</bean>
+
+	<bean id="LineDetaileDao"
+		class="com.global.dao.impl.LineDetaileDaoImpl">
+		<property name="jt" ref="jdbcTemplete"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+
+	<bean id="jdbcTemplete"
+		class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg ref="dataSource"></constructor-arg>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="oracle.jdbc.driver.OracleDriver">
+		</property>
+		<property name="url"
+			value="jdbc:oracle:thin:@10.0.3.11:1521:ora9i">
+		</property>
+		<property name="username" value="amaker"></property>
+		<property name="password" value="123"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource"></ref>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.Oracle9Dialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/global/vo/Car.hbm.xml</value>
+				<value>com/global/vo/Carstate.hbm.xml</value>
+				<value>com/global/vo/Cartype.hbm.xml</value>
+				<value>com/global/vo/City.hbm.xml</value>
+				<value>com/global/vo/Deliveryspot.hbm.xml</value>
+				<value>com/global/vo/Employee.hbm.xml</value>
+				<value>com/global/vo/Line.hbm.xml</value>
+				<value>com/global/vo/Linedetaile.hbm.xml</value>
+				<value>com/global/vo/Oder.hbm.xml</value>
+				<value>com/global/vo/Orderstate.hbm.xml</value>
+				<value>com/global/vo/Position.hbm.xml</value>
+				<value>com/global/vo/Power.hbm.xml</value>
+				<value>com/global/vo/Province.hbm.xml</value>
+				<value>com/global/vo/Receipt.hbm.xml</value>
+				<value>com/global/vo/Receiptdetaile.hbm.xml</value>
+				<value>com/global/vo/User.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+</beans>

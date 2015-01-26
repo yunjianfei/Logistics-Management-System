@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" type="text/css" href="../wuliu_back.css"/>
+<title>无标题文档</title>
+<script>
+// JavaScript Document
+function fun_select_addany(theform){
+	var theform = document.form1;
+    var i; 
+    for (i=0;i<theform.left_select.length;i++){
+        if (theform.left_select.options[i].selected == true){
+           if (theform.left_select.options[i].text !=""){
+              theform.right_select.options[theform.right_select.length]=new Option(theform.left_select.options[i].text,theform.left_select.options[i].value);
+              theform.left_select.options[i] =new Option("");
+              }
+       } 
+    }
+    for (i=0;i<theform.left_select.length;i++){
+        if (theform.left_select.options[i].text ==""){theform.left_select.options.remove(i); i--;}
+    } 
+} 
+
+function fun_select_addall(theform){
+	var theform = document.form1;
+    var i;   
+    for (i=0;i<theform.left_select.length;i++){
+        if (theform.left_select.options[i].text !=""){
+           theform.right_select.options[theform.right_select.length]=new Option(theform.left_select.options[i].text);
+           }       
+    }
+    theform.left_select.length=0;     
+}  
+
+function fun_select_dltany(theform){
+	var theform = document.form1;
+   var i; 
+    for (i=0;i<theform.right_select.length;i++){
+        if (theform.right_select.options[i].selected == true){
+           if (theform.right_select.options[i].text !=""){
+              theform.left_select.options[theform.left_select.length]=new Option(theform.right_select.options[i].text);
+              theform.right_select.options[i] =new Option("");
+              }
+       } 
+    }
+    for (i=0;i<theform.right_select.length;i++){
+        if (theform.right_select.options[i].text ==""){theform.right_select.options.remove(i);i--;}
+    } 
+}
+
+function fun_select_dltall(theform){
+var theform = document.form1;
+    var i;   
+    for (i=0;i<theform.right_select.length;i++){
+        if (theform.right_select.options[i].text !=""){
+           theform.left_select.options[theform.left_select.length]=new Option(theform.right_select.options[i].text);
+           }
+    }
+    theform.right_select.length=0;            
+}    
+
+function checkAll(){
+	var theform = document.form1;
+	var i;   
+    for (i=0;i<theform.right_select.length;i++){
+        theform.left_select.options[i].selected == true;
+    }
+    theform.submit();
+}
+</script>
+</head>
+
+<body>
+<center>
+<h1>添加线路</h1>
+<hr>
+注意：请按照线路上配送点的顺序来选择
+<form name="form1" action="addSuccess.html" method="post">
+      <table class="t1">
+			<tr>
+			<td>
+			<select name="left_select" style="HEIGHT: 220px; WIDTH: 100px" multiple>
+				 	<option value="1">山西太原</option>
+					<option value="2">北京市</option>
+					<option value="3">陕西榆林</option>
+					<option value="4">山西省大同市</option>
+              </select>
+			</td>
+		
+			<td>
+				<table class="t1">
+					<tr>
+						<td><input name="btn_select_addany" type="button" title="Add any" onclick="fun_select_addany(form1)" value="添加" language="javascript"></td>
+						<td> <input  name="btn_select_dltany" type="button" title ="delete any" onclick="fun_select_dltany(form1)" value="删除"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><input  name="btn_select_addall" type="button" title="Add all" onclick="fun_select_addall(form1)" value="全选"></td>
+						<td><input  name="btn_select_dltall" type="button" title ="delete all" onclick="fun_select_dltall(form1)" value="全删"></td>
+					</tr>
+				</table>
+		</td>
+
+		<td>
+			<select name="right_select" style="HEIGHT: 220px; WIDTH: 100px" multiple="multiple">  </select>
+		</td>
+      </tr>
+	</table>
+	<br>
+	<input type="submit" value="保存线路">
+</form>
+</center>
+</body>
+</html>

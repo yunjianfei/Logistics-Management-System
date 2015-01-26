@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="wuliu_back.css" />
+  <script language="javascript">
+    function test(ch){
+			var childObj=document.getElementById("menu_down"+ch);
+			if(childObj.style.display=='none'){
+					childObj.style.display='block';
+			}
+			else
+			{
+				childObj.style.display='none';
+			}
+    return;
+  }
+</script>
+</head>
+  <body>
+	<div id="container">
+       <div id="banner">
+        <div id="globallink">
+        <ul>
+            <li><a href="index.html">办公首页</a></li>
+            <li><a href="wuliu.html">公司首页</a></li>
+             <li><a href="index.html">退出</a></li>
+          </ul>
+         </div>
+       </div>
+     <div id="left">
+          <div id="menu"><a onClick="test(1)">用户管理</a></div>
+          <div id="menu_down1"  class="menu_down"  style="display:block">
+            <ul>
+              <li><a href="userManage/addUser.html" target="main">添加用户</a></li>
+
+              <li><a href="userManage/selectUser.html"  target="main">查看用户</a></li>
+            </ul>
+          </div>
+          <div id="menu"><a onClick="test(2)">员工管理</a></div>
+          <div id="menu_down2" class="menu_down"  style="display:block">
+            <ul>
+              <li><a href="empManage/addEmp.html" target="main">新员工入职</a></li>
+
+              <li><a href="empManage/selectEmp.html" target="main">查看员工信息</a></li>
+            </ul>
+          </div>
+           <div id="menu"><a onClick="test(3)">车辆管理</a></div>
+          <div id="menu_down3" class="menu_down"  style="display:block">
+            <ul>
+              <li><a href="carManage/addCar.html" target="main">新购车辆登记</a></li>
+
+              <li><a href="carManage/searchCar.html" target="main">查看车辆</a></li>
+               <li><a href="carManage/controlCar.html"  target="main">车辆状态</a></li>
+            </ul>
+          </div>
+          <div id="menu"><a onClick="test(4)">订单管理</a></div>
+          <div id="menu_down4" class="menu_down"  style="display:block">
+            <ul>
+                <li><a href="ordersManage/Ordering.html" target="main">填写订单</a></li>
+               
+                <li><a href="ordersManage/SelectOrder.html" target="main">查看订单</a></li>
+				 <li><a href="ordersManage/OkOrder.html" target="main">订单签收</a></li>
+		<li><a href="ordersManage/UndoOrdering.html" target="main">货物交接</a></li>
+		<li><a href="ordersManage/viewJiaoJieDan.html" target="main">查看交接单</a></li>
+
+            </ul>
+          </div>
+           <div id="menu"><a onClick="test(5)">线路管理</a></div>
+          <div id="menu_down5" class="menu_down"  style="display:block">
+
+            <ul>
+              <li><a href="lineManage/addLine.html" target="main">新增线路</a></li>
+              <li><a href="lineManage/viewLine.html" target="main">查看线路</a></li>
+			  <li><a href="lineManage/matchingLine.html" target="main">线路配车</a></li>
+            </ul>
+          </div>
+           <div id="menu"><a onClick="test(6)">配送点管理</a></div>
+
+          <div id="menu_down6" class="menu_down"  style="display:block">
+            <ul>
+              <li><a href="peiSongDianManage/addPeiSongDian.html" target="main">新增配送点</a></li>
+              <li><a href="peiSongDianManage/viewPeiSongDian.html" target="main">查看配送点</a></li>
+            </ul>
+          </div>
+			
+			<div id="menu"><a onClick="test(7)">报表管理</a></div>
+		   <div id="menu_down7" class="menu_down"  style="display:block">
+            <ul>
+              <li><a href="baoBiaoManage/viewBaoBiao.html" target="main">查看报表</a></li>
+            </ul>
+          </div>
+
+     </div>
+     <div id="main">
+     <iframe name="main" id="main" frameborder="0">
+     </iframe>
+     </div>
+     <div id="foot">
+     <center>
+     <pre>
+               版权所有GLOBAL物流公司 备案序号:晋ICP备05039742号
+              业务资询电话：0351-2720833 2720836 13805390912 服务监督电话：13791568668 传真：0351-2720899
+             总公司地址：山西省太原市万柏林区186号（太原理工大学向北走100米）
+</pre>
+  </center>
+     </div>
+	</div>
+	</body>
+</html>

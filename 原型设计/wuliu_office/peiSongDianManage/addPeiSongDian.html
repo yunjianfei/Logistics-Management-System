@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>addPeiSongDian.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <link rel="stylesheet" type="text/css" href="../wuliu_back.css"/>
+
+  </head>
+  
+  <body>
+    <center>
+    	<h1>添加配送点</h1>
+    	<hr>
+    	<table border="1" class="t1">
+	    	<form action="addSuccess.html">
+	    		<tr>
+	    			<td>站点编号：</td>
+	    			<td><input type="text" name="zhanDianName"></td>
+	    		</tr>
+	    		<tr>
+	    			<td>站点地址：</td>
+	    			<td>
+	    				<select name="province">
+	    					<option>请选择省...</option>
+	    					<option>陕西省</option>
+	    					<option>山西省</option>
+	    					<option>河北省</option>
+	    				</select>
+	    					<select name="city">
+	    					<option>请选择城市...</option>
+	    					<option>太原</option>
+	    					<option>北京</option>
+	    					<option>榆林</option>
+	    				</select>
+	    			</td>
+	    		</tr>
+	    		
+	    		<tr>
+	    			<td>站点负责人：</td>
+	    			<td><input type="text" name="price"></td>
+	    		</tr>
+				<tr>
+	    			<td>联系电话：</td>
+	    			<td><input type="text" name="tel"></td>
+	    		</tr>
+				
+					<tr>
+				<td>
+				首公斤范围（Kg）
+				</td>
+				<td><input type="text" ></td>
+				</tr>
+				
+				
+				<tr>
+				<td>
+				首公斤价格（￥）
+				</td>
+				<td><input type="text" ></td>
+				</tr>
+				
+				<tr>
+				<td>
+				次公斤价格（￥）
+				</td>
+				<td><input type="text" ></td>
+				</tr>
+				
+	    		<tr>
+	    			<td colspan="2" align="center">
+	    				<input type="submit" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" value="重填">
+	    			</td>
+	    		
+	    		</tr>
+	    	</form>
+    	</table>
+    </center>
+  </body>
+</html>

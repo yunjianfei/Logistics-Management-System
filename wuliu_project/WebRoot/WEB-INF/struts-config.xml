@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="loginForm" type="com.global.struts.form.LoginForm" />
+    <form-bean name="companyForm" type="com.global.struts.form.CompanyForm" />
+    <form-bean name="userForm" type="com.global.struts.form.UserForm" />
+    <form-bean name="employeeForm" type="com.global.struts.form.EmployeeForm" />
+    <form-bean name="carForm" type="com.global.struts.form.CarForm" />
+    <form-bean name="orderForm" type="com.global.struts.form.OrderForm" />
+    <form-bean name="lineForm" type="com.global.struts.form.LineForm" />
+    <form-bean name="deliverySpotForm" type="com.global.struts.form.DeliverySpotForm" />
+    <form-bean name="reportForm" type="com.global.struts.form.ReportForm" />
+    <form-bean name="UpdataEmployeeForm" type="com.global.struts.form.UpdataEmployeeForm" />
+    <form-bean name="selectEmployeeForm" type="com.global.struts.form.SelectEmployeeForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="loginForm"
+      input="/index.jsp"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      parameter="methodName"
+      type="com.global.struts.action.LoginAction" >
+      <forward name="super" path="/wuliu_office.jsp"></forward>
+      <forward name="manager" path="/deliveryspot_office.jsp"></forward>
+      <forward name="operater" path="/operator_office.jsp"></forward>
+      </action>
+    <action
+      attribute="companyForm"
+      input="/wuliu.jsp"
+      name="companyForm"
+      path="/company"
+      scope="request"
+      parameter="methodName"
+      type="com.global.struts.action.CompanyAction" >
+      	<forward name="orderState" path="/global/search.jsp"></forward>
+      	<forward name="price" path="/global/price.jsp"></forward>
+      	<forward name="wuliu" path="/wuliu.jsp"></forward>
+      	<forward name="websit" path="/global/websit.jsp"></forward>
+      	<forward name="websitinfo" path="/global/webSitInfo.jsp"></forward>
+      	<forward name="searchWebSit" path="/global/searchWebSit.jsp"></forward>
+      </action>
+      <action
+      attribute="userForm"
+      input="/userManage/addUser.jsp"
+      name="userForm"
+      path="/check/user"
+      scope="request"
+      parameter="methodName"
+      type="com.global.struts.action.UserAction" >
+      <forward name="selectUser" path="/userManage/selectUser.jsp"></forward>
+      <forward name="particular" path="/userManage/particular.jsp"></forward>
+      <forward name="modification" path="/userManage/modification.jsp"></forward>
+      </action>
+     <action
+      attribute="employeeForm"
+      input="/empManage/addEmp.jsp"
+      name="employeeForm"
+      path="/check/employee"
+      scope="request"
+      parameter="method"
+      type="com.global.struts.action.EmployeeAction" >
+      		<forward name="empList" path="/empManage/empList.jsp"></forward>
+      </action>
+      <action
+      attribute="selectEmployeeForm"
+      input="/empManage/selectEmp.jsp"
+      name="selectEmployeeForm"
+      path="/check/selectEmployee"
+      scope="request"
+      parameter="method"
+      type="com.global.struts.action.SelectEmployeeAction" >
+	      <forward name="empList" path="/empManage/empList.jsp"></forward>
+	      <forward name="updadaEmp" path="/empManage/updataEmp.jsp"></forward>
+      </action>
+      <action
+      attribute="UpdataEmployeeForm"
+      input="/empManage/updataEmp.jsp"
+      name="UpdataEmployeeForm"
+      path="/check/updataEmployee"
+      scope="request"
+      parameter="method"
+      type="com.global.struts.action.UptataEmployeeAction" >
+      <forward name="selectEmp" path="/empManage/selectEmp.jsp"></forward>
+      <forward name="selectEmpAction" path="/check/selectEmployee.do?method=queryByEmpNO"></forward>
+      </action>
+     <action
+      attribute="carForm"
+      input="/carManage/addCar.jsp"
+      name="carForm"
+      path="/check/car"
+      scope="request"
+      parameter="methodName"
+      type="com.global.struts.action.CarAction" >
+      <forward name="addCar" path="/carManage/addCar.jsp" />
+      <forward name="searchCar" path="/carManage/searchCar.jsp" />
+      <forward name="searchCar2" path="/carManage/searchCar2.jsp" />
+      <forward name="search" path="/carManage/searchCar.jsp" />
+      <forward name="controlCar" path="/carManage/controlCar.jsp" />
+      <forward name="carDetail" path="/carManage/viewCar.jsp" />
+      <forward name="addCar2" path="/carManage/addCar2.jsp" />
+    </action>
+    <action
+      attribute="orderForm"
+      input="/ordersManage/Ordering.jsp"
+      name="orderForm"
+      path="/check/order"
+      scope="request"
+      parameter="methodName"
+      type="com.global.struts.action.OrderAction" >
+      	<forward name="toudidan" path="/ordersManage/receiveOrders.jsp"></forward>
+      	<forward name="showReceipt" path="/ordersManage/showJiaoJieDan.jsp"></forward>
+      	<forward name="showQianShouOrders" path="/ordersManage/showQianShouOrders.jsp"></forward>
+      	<forward name="showTouDiDan" path="/ordersManage/showTouDiDan.jsp"></forward>
+      	<forward name="selectJiaoJieDan" path="/ordersManage/SelectJiaoJieDan.jsp"></forward>
+      	<forward name="selectTouDiDan" path="/ordersManage/SelectTouDiDan.jsp"></forward>
+      	<forward name="ViewReceiptDetaile" path="/ordersManage/ViewReceiptDetaile.jsp"></forward>
+      	<forward name="ViewTouDiDanDetaile" path="/ordersManage/ViewTouDiDanDetaile.jsp"></forward>
+      	<forward name="doReceipt" path="/ordersManage/UndoOrdering.jsp"></forward>
+      	<forward name="selectOrder" path="/ordersManage/SelectOrder.jsp"></forward>
+		<forward name="SelectOrderByOrderNo" path="/ordersManage/SelectOrderByOrderNo.jsp"></forward>
+      	
+      </action>
+    <action
+      attribute="lineForm"
+      input="/lineManage/addLine.jsp"
+      name="lineForm"
+      path="/check/line"
+      scope="request"
+      parameter="methodName"
+      type="com.global.struts.action.LineAction" >
+      <forward name="viewLine" path="/lineManage/viewLine.jsp"></forward>
+      <forward name="matchingLine" path="/lineManage/matchingLine.jsp"></forward>
+      <forward name="matchingLine" path="/lineManage/matchingLine.jsp"></forward>
+      <forward name="viewLineInfo" path="/lineManage/viewLineInfo.jsp"></forward>
+      </action>
+    <action
+      attribute="deliverySpotForm"
+      input="/peiSongDianManage/addPeiSongDian.jsp"
+      name="deliverySpotForm"
+      path="/check/deliverySpot"
+      scope="request"
+      parameter="methodName"
+      type="com.global.struts.action.DeliverySpotAction" >
+      <forward name="viewPeiSongDian" path="/peiSongDianManage/viewPeiSongDian.jsp"></forward>
+      <forward name="viewPeiSongDianInfo" path="/peiSongDianManage/viewPeiSongDianInfo.jsp"></forward>
+      <forward name="modifyPeiSongDianInfo" path="/peiSongDianManage/modifyPeiSongDianInfo.jsp"></forward>
+      </action>
+    <action
+      attribute="reportForm"
+      input="/baoBiaoManage/viewBaoBiao.jsp"
+      name="reportForm"
+      path="/check/report"
+      scope="request"
+      parameter="methodName"
+      type="com.global.struts.action.ReportAction" />
+
+  </action-mappings>
+
+  <message-resources parameter="com.global.struts.ApplicationResources" />
+</struts-config>

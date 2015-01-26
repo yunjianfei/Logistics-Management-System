@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">         
+	               
+	<filter>
+		<filter-name>Encoding</filter-name>
+		<filter-class>com.global.filter.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encode</param-name>
+			<param-value>gbk</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>UserLoginFilter</filter-name>
+		<filter-class>com.global.filter.UserLoginFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>Homepage</filter-name>
+		<filter-class>com.global.filter.Homepage</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Encoding</filter-name>               
+		<url-pattern>/*</url-pattern>            
+	</filter-mapping>                                     
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/deliveryspot_office.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/check/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/operator_office.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/wuliu_office.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/baoBiaoManage/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/carManage/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/empManage/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/lineManage/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/ordersManage/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/peiSongDianManage/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>UserLoginFilter</filter-name>
+		<url-pattern>/userManage/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>Homepage</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+   
+     <servlet>
+		<servlet-name>action</servlet-name>
+		<servlet-class>
+			org.apache.struts.action.ActionServlet
+		</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>3</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>3</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			/WEB-INF/classes/applicationContext.xml
+		</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>context</servlet-name>
+		<servlet-class>
+			org.springframework.web.context.ContextLoaderServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>dwr</servlet-name>
+		<servlet-class>
+			org.directwebremoting.spring.DwrSpringServlet
+		</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dwr</servlet-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
+

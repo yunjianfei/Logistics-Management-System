@@ -1,0 +1,22 @@
+#
+#Mon Nov 24 11:41:48 CST 2008
+genBasicCompId=false
+sessionFactoryName=com.global.db.HibernateSessionFactory
+profile=
+daoSFId=
+version=3.1
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=sequence
+libInstallFolder=WebRoot/WEB-INF/lib
+addLibs2Project=false
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+reSettingsFile=
+configFile=/wuliu/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=false
